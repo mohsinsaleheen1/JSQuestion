@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      color: red;
+    }
+    img {
+      height: 300px;
+      position: absolute;
+      left: 750px;
+      top: 150px;
+    }
+    .i1 {
+      position: absolute;
+      top: 480px;
+      left: 750px;
+      width: 90px;
+      height: 50px;
+      background-color: green;
+      color: white;
+      border-color: darkgreen;
+    }
+    .i2 {
+      position: absolute;
+      top: 480px;
+      left: 860px;
+      width: 90px;
+      height: 50px;
+      background-color: brown;
+      color: white;
+      border-color: darkred;
+    }
+    * {
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <!-- ==================Chapter 46, 48 (Events)================= -->
+    <!-- ---------------------Q/1-------------------------------- -->
+    <!-- <button
+      onclick="fun()"
+      style="
+        background-color: brown;
+        color: white;
+        padding: 3px;
+        border-radius: 2px solid white;
+      "
+    >
+      Click Here
+    </button> -->
+    <!-- ---------------------Q/2-------------------------------- -->
+    <!-- <h3 id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum nostrum
+      sint voluptatum temporibus, accusamus vero enim corrupti aspernatur sed
+      soluta ea laborum, porro consequatur incidunt unde voluptatem itaque
+      reiciendis?
+    </h3>
+    <button
+      onclick="fun2()"
+      style="
+        background-color: brown;
+        color: white;
+        padding: 3px;
+        border-radius: 2px solid white;
+      "
+    >
+      Click Here
+    </button> -->
+    <!-- ---------------------Q/3-------------------------------- -->
+    <!-- <a
+      href="https://www.google.com/"
+      id="demo"
+      onmouseover="chgcolor()"
+      onmouseout="orgcolor()"
+      >Google</a
+    > -->
+    <!-- ---------------------Q/4-------------------------------- -->
+    <!-- <a href="#top" id="down">Down</a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <a href="#down" id="top">Up</a> -->
+    <!-- ---------------------Q/5-------------------------------- -->
+    <!-- <a href="#" onclick="playMusic()">Click Here</a> -->
+    <!-- ---------------------Q/6-------------------------------- -->
+    <!-- <a href="#" onclick="newwin()">Click here</a> -->
+    <!-- ---------------------Q/7-------------------------------- -->
+    <!-- <button
+      onclick="fun()"
+      style="
+        background-color: brown;
+        color: white;
+        padding: 3px;
+        border-radius: 2px solid white;
+      "
+    >
+      Click Here
+    </button> -->
+    <!-- ---------------------Q/8-------------------------------- -->
+    <!-- <button
+      id="btn"
+      onmouseover="chgcolor()"
+      style="
+        background-color: brown;
+        color: white;
+        padding: 3px;
+        border-radius: 2px solid white;
+      "
+    >
+      Click Here
+    </button> -->
+    <!-- ---------------------Q/9-------------------------------- -->
+    <!-- <button
+      onclick="playmusic()"
+      style="
+        background-color: brown;
+        color: white;
+        padding: 3px;
+        border-radius: 2px solid white;
+      "
+    >
+      Click Here
+    </button> -->
+    <!-- ---------------------Q/10-------------------------------- -->
+    <!-- <p onmouseover="over()">MOUSE OVER ME</p> -->
+    <!-- ---------------------Q/11-------------------------------- -->
+    <!-- <p onmouseout="move()" id="demo">Lorem ipsum dolor sit amet.</p> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ==================Chapter 49, 50 (Reading and Setting field values)================= -->
+    <!-- ---------------------Q/1-------------------------------- -->
+    <!-- <input type="text" placeholder="Enter Your Name" id="demo" />
+    <button onclick="fun()">Click</button> -->
+    <!-- ---------------------Q/2-------------------------------- -->
+    <!-- <input
+      type="checkbox"
+      id="opt1"
+      name="vehicle1"
+      value="Javascript"
+      class="checkbox"
+    />
+    <label for="opt1">Javascript</label><br />
+    <input
+      type="checkbox"
+      id="opt2"
+      name="vehicle2"
+      value="Html"
+      class="checkbox"
+    />
+    <label for="opt2">Html</label><br />
+    <input
+      type="checkbox"
+      id="opt3"
+      name="vehicle2"
+      value="Css"
+      class="checkbox"
+    />
+    <label for="opt3">Css</label><br />
+    <button onclick="fun()">Click here</button> -->
+    <!-- ---------------------Q/3-------------------------------- -->
+    <!-- <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <button onclick="btn()">Submit</button> -->
+    <!-- ---------------------Q/4-------------------------------- -->
+    <!-- <input type="text" id="input" /> -->
+    <!-- ---------------------Q/5-------------------------------- -->
+    <!-- <h1>You Are married / unmarried</h1>
+    <input
+      type="radio"
+      id="married"
+      name="Status"
+      class="married"
+      value="Married"
+    />
+    <label for="married">Married</label>
+    <input
+      type="radio"
+      id="Unmarried"
+      name="Status"
+      class="married"
+      value="Unmarried"
+    />
+    <label for="Unmarried">Unmarried</label>
+    <button onclick="btn()">Submit</button> -->
+    <!-- ---------------------Q/6-------------------------------- -->
+    <!-- <input type="text" id="input" />
+    <button onclick="btn()">click</button> -->
+    <!-- ---------------------Q/7-------------------------------- -->
+    <!-- <form action="">
+      <table align="center" style="padding: 8px; background-color: black">
+        <tr>
+          <td colspan="2">
+            <p style="text-align: center; color: white">Registration Form</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">First Name:</td>
+          <td style="padding: 5px">
+            <input
+              type="text"
+              required
+              style="padding: 2px; width: 200px"
+              id="fname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 0px 0px 5px 5px">
+            <span id="v1" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">Last Name:</td>
+          <td style="padding: 5px">
+            <input
+              type="text"
+              id="lname"
+              required
+              style="padding: 2px; width: 200px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 0px 0px 5px 5px">
+            <span id="v2" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">Email:</td>
+          <td style="padding: 5px">
+            <input
+              type="email"
+              id="Email"
+              required
+              style="padding: 2px; width: 200px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 0px 0px 5px 5px">
+            <span id="v3" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">Password</td>
+          <td style="padding: 5px">
+            <input
+              type="password"
+              required
+              id="password"
+              style="padding: 2px; width: 200px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 0px 0px 5px 5px">
+            <span id="v4" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">Gender:</td>
+          <td style="padding: 5px; color: white">
+            <input
+              required
+              type="radio"
+              value="Male"
+              name="Gender"
+              id="Male"
+              class="Gender"
+            />
+            <label for="Male">Male</label>
+            <input
+              required
+              type="radio"
+              value="Female"
+              name="Gender"
+              id="Female"
+              class="Gender"
+            />
+            <label for="Female">Female</label>
+            <input
+              required
+              type="radio"
+              value="Other"
+              name="Gender"
+              id="Other"
+              class="Gender"
+            />
+            <label for="Other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 0px 0px 5px 5px">
+            <span id="v5" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px; color: white">City:</td>
+          <td style="padding: 5px">
+            <select name="City" id="City" style="padding: 2px; width: 205px">
+              <option value="Karachi">Karachi</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Lahore">Lahore</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 5px; text-align: center">
+            <button
+              onclick="btn()"
+              style="
+                background-color: brown;
+                color: white;
+                padding: 5px;
+                width: 100px;
+              "
+            >
+              Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ==================Chapter 51 (Reading and Setting paragraph text)================= -->
+    <!-- ---------------------Q/1-------------------------------- -->
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cum
+      facere nam inventore, ipsum nemo corrupti, eum voluptatum expedita,
+      doloribus repellendus. Quibusdam quidem necessitatibus nobis provident
+      laboriosam at sint illum.Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Doloremque cum facere nam inventore, ipsum nemo
+      corrupti, eum voluptatum expedita, doloribus repellendus. Quibusdam quidem
+      necessitatibus nobis provident laboriosam at sint illum.Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Doloremque cum facere nam
+      inventore, ipsum nemo corrupti, eum voluptatum expedita, doloribus
+      repellendus. Quibusdam quidem necessitatibus nobis provident laboriosam at
+      sint illum. <span id="more"></span>
+      <a href="#" onclick="Read()" id="demo">Read more</a>
+    </p> -->
+    <!-- ---------------------Q/2-------------------------------- -->
+    <!-- <input type="text" id="inp" />
+    <button onclick="search()">Search</button>
+    <p id="para">
+      Thestory of history of the Islamic Republic of Pakistan began on 14 August
+      1947 when the country came into being in the form of Dominion of Pakistan
+      within the British Commonwealth as the result of Pakistan Movement and the
+      partition of India. While the history of the Pakistani Nation according to
+      the Pakistan government's official chronology started with the Islamic
+      rule over Indian subcontinent by Muhammad bin Qasim[1] which reached its
+      zenith during Mughal Era. In 1947, Pakistan consisted of West Pakistan
+      (today's Pakistan), East Pakistan (today's Bangladesh) and Hyderabad (now
+      in India) The President of All-India Muslim League and later the Pakistan
+      Muslim League, Muhammad Ali Jinnah became Governor-General while the
+      secretary general of the Muslim League, Liaquat Ali Khan became Prime
+      Minister. The constitution of 1956 made Pakistan an Islamic democratic
+      country.
+    </p> 
+    <!-- ---------------------Q/3-------------------------------- -->
+    <!-- ---------------------Q/4-------------------------------- -->
+    <!-- <textarea cols="30" rows="10" id="text"></textarea>
+    <p id="para"></p>
+    <button onclick="btn()">Click</button> -->
+    <!-- ---------------------Q/5-------------------------------- -->
+    <!-- ---------------------Q/6-------------------------------- -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ==================Chapter 52 (Manipulating Images and Text)================= -->
+    <!-- ---------------------Q/1-------------------------------- -->
+    <!-- <p id="p1" onClick="boldIt();">Click this sentence.</p> -->
+    <!-- ---------------------Q/2-------------------------------- -->
+    <!-- <img
+      src="default.jpg"
+      onmouseover="chng()"
+      onmouseout="def()"
+      alt=""
+      width="300px"
+      height="200px"
+      id="image"
+    /> -->
+    <!-- ---------------------Q/3-------------------------------- -->
+    <!-- <h1 id="hd" onmouseover="clck()">Click This Heading</h1> -->
+    <!-- ---------------------Q/4-------------------------------- -->
+    <!-- <p id="para" onmouseenter="para()">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae,
+      mollitia.
+    </p> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ==================Chapter 52 (Swapping Images)================= -->
+    <!-- ---------------------Q/1-------------------------------- -->
+    <!-- <h1>BULB ON AND OFF</h1>
+    <img src="off.png" id="img" /><br />
+    <input class="i1" type="button" value="on" id="on" onclick="on()" />
+    <input class="i2" type="button" value="off" id="off" onclick="off()" /> -->
+  </body>
+  <script src="app.js" defer></script>
+</html>
